@@ -18,4 +18,4 @@ data class TodoEntity(
     val added:Long = System.currentTimeMillis()
 )
 
-val TodoEntity.addDate:String get() = SimpleDateFormat("dd.mm.yyyy").format(Date(added))
+val TodoEntity.addDate:String get() = SimpleDateFormat("dd.MM.yyyy").format(Date(added))
