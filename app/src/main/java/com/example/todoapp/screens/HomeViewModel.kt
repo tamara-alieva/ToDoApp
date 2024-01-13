@@ -36,7 +36,7 @@ class HomeViewModel:ViewModel(), KoinComponent {
         }
     }
 
-    fun daleteTodo(todo:TodoEntity) {
+    fun deleteTodo(todo:TodoEntity) {
         viewModelScope.launch(Dispatchers.IO) {
             repo.deleteTodo(todo)
         }
